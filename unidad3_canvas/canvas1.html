@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="300">
+        Tu navegador no admite el elemento &lt;canvas&gt;.
+    </canvas>
+
+    <script>
+        let c=document.getElementById("canvas");
+        //si canva es soportado
+        let ctx;
+        if(c.getContext){
+            ctx=c.getContext("2d");
+            console.log(ctx);
+        }
+
+    </script>
+</body>
+</html>

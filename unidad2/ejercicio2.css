@@ -1,0 +1,23 @@
+div, p {
+    border: 2px solid steelblue;
+}
+
+div{
+    width: 50%;
+}
+
+hr{
+    border:1px solid steelblue;
+}
+
+.claseceleste{
+    border-bottom: 0px;
+    border-left: 0px;
+    color:aqua;
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
+
+.claserojo{
+    color:red;
+}

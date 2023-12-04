@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esfera{
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    border:8px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.needle{
+    animation-name: agujas;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: 50% 100%;
+}
+
+.hora{
+    border: 4px solid;
+    height: 20%;
+    position: absolute;
+    top: 30%;
+    animation-duration: 3600s;
+}
+
+.min{
+    border: 3px solid gray;
+    height: 30%;
+    animation-duration: 360s;
+    position: absolute;
+    top: 20%;
+}
+
+.seg{
+    border:2px solid darkslategrey;
+    height: 40%;
+    animation-duration: 60s;
+    position: absolute;
+    top: 10%;
+}
+
+@keyframes agujas {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}

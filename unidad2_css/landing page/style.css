@@ -1,0 +1,312 @@
+/*GLOBAL STYLE*/
+
+*{
+    font-family: 'Pacifico', cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(252,163,17,30.03%);
+}
+
+p{
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.head-foot{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    height: 15vh;
+}
+
+.head-foot a{
+    color: white;
+    text-decoration: none;
+    padding-right: 4vh;
+}
+
+header a:hover{
+    color: #fca311;
+}
+
+section article{
+    border-radius: 5vw;
+    background-color: #fca311;
+    margin: 20px;
+    height: auto;
+}
+
+aside article{
+    margin: 20px;
+    height: auto;
+}
+
+img{
+    border-radius: 5vw;
+}
+
+#about-id p{
+    font-size: larger;
+    padding: 20px;
+}
+
+article{
+    text-align: center;
+}
+
+#contact-id{
+    display: grid;
+    grid-template-columns: 15vw auto;
+    grid-template-rows: repeat(3,auto);
+    margin: 20px;
+}
+
+label, input, textarea{
+    margin-bottom: 20px;
+    border-radius: 5vw;
+}
+
+input, textarea, button{
+    border:1px solid #14213d;
+}
+
+footer p{
+    font-family: 'Pacifico', cursive;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-foot{
+    width: 10%;
+    height: 10vh;
+}
+
+button{
+    border-radius: 50px;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+button:hover{
+    background-color: #14213d;
+    color: #fca311;
+}
+
+#newsletter{
+    padding: 5%;
+    margin-top: 1vh;
+    border-radius: 50px;
+    background-color: #fca311;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url(img/musica-instrumental.jpg);
+    background-size: 100% 90vh; 
+    background-repeat: no-repeat;
+}
+
+.border-img{
+    border: 0.4vh solid #14213d;
+    border-radius: 5vh;
+    margin: 1vh;
+    width: auto;
+    height: 30vh;
+}
+
+.border-img img{
+    width: 25vw;
+    height: 25vh;
+}
+
+/*MOBILE STYLE*/
+
+@media only screen and (max-width: 697px){
+    
+    h1{
+        display: flex;
+        align-items: center;
+    }
+    
+    h2{
+        font-size: 1.25rem;
+    }
+    
+    .icon-head{
+        display: none;
+    }
+    
+    nav li{
+        display: block;
+    }
+    
+    header{
+        display: grid;
+        grid-template-columns: repeat(4,25vw);
+        grid-template-rows: auto;
+        height: 10vh;
+    }
+    
+    #newsletter *{
+        font-size: 1.5rem;
+    }
+
+    header h1{
+        grid-column: 1 /span 3;
+        text-align: start;
+        padding-left: 1vw;
+    }
+    
+    .bars-head{
+        width: 90%;
+        height: 8vh;
+        grid-column: 4;
+        display: inline;
+    }
+    
+    main{
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .wrapper{
+        display: block;
+    }
+    
+    .border-img img{
+        width: 60vw;
+    }
+    
+    .grid-news, .grid-shop{
+        display: grid;
+        grid-template-columns: 90vw;
+    }
+    
+    footer img{
+        padding-right: 10px;
+    }
+    
+    
+    /* Establecer un estilo para el menú desplegable */
+    nav {
+        display: none;
+        position: fixed;
+        top: 7vh; /* Ajusta la posición según sea necesario */
+        right: 0;
+        width: 25%;
+        background-color: #14213d;
+    }
+    
+    
+    /* Mostrar el menú desplegable al hacer clic en el icono de las barras */
+    .bars-head:hover + nav,
+    nav:hover {
+        display: block;
+    }
+}
+
+
+/*WEB STYLE*/
+
+@media screen and (min-width: 697px) {
+    
+    .icon-head{
+        width: 10%;
+        height: 10vh;
+        position: absolute;
+        top: 2vh;
+    }
+    
+    #icon1{
+        left: 4%;
+    }
+    
+    #icon2{
+        right: 4%;
+    }
+    
+    .bars-head{
+        display: none;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li {
+        display: inline;
+    }
+
+    main{
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-image: url(img/musica-instrumental.jpg);
+        background-size: 100% 90vh; 
+        background-repeat: no-repeat;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,33%) ;
+        grid-template-rows: repeat(3,auto);
+    }
+    
+    nav{
+        margin-top: 20px;
+    }
+/*
+    .border-img{
+        border: 0.4vh solid #14213d;
+        border-radius: 5vh;
+        margin: 1vh;
+        width: auto;
+        height: 30vh;
+    }
+    
+    .border-img img{
+        width: 25vw;
+        height: 25vh;
+    }
+*/
+    section{
+        grid-row: 1/span 3;
+        grid-column: 1/span 2;
+    }
+    
+    aside{
+        grid-column: 3;
+        grid-row: 1/span 3;
+    }    
+
+    .grid-shop{
+    display: grid;
+    grid-template-columns: repeat(2,30vw);
+    grid-template-rows: 30vw;
+    }
+}

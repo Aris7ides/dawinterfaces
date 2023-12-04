@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Unidad 3</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="multimedia.css">
+</head>
+
+<body>
+    <header>Header</header>
+    <nav>Navigator</nav>
+    <main>
+        <h1>Insertando audio en una web</h1>
+        <h2>Etiqueta audio con controles por defecto</h2>
+        <audio controls>
+            <source src="filesforaudio/Aretha.mp3" type="audio/mp3">
+            <source src="filesforaudio/Aretha.ogg" type="audio/ogg">
+        </audio>
+        <h2>Descarga del fichero Aretha.ogg</h2>
+        <a href="filesforaudio/Aretha.mp3" download>Descargar audio</a>
+        <h2>Controles Personalizados de reproduccion</h2>
+        <div>
+            <img src="filesforaudio/Play1Normal.png" alt="play" onclick="play()">
+            <img src="filesforaudio/Stop1Hot.png" alt="stop" onclick="stop()">
+            <img src="filesforaudio/VolumeNormal.png" alt="volumenon" onclick="vlon()">
+            <img src="filesforaudio/VolumeNormalRed.png" alt="volumenoff" onclick="vloff()">
+        </div>
+    </main>
+    <aside>SideBar</aside>
+    <footer>Footer</footer>
+
+    <script>
+        const audio=document.querySelector("audio");
+        const play= function () {audio.play()};
+        const stop=function (){audio.pause()};
+        const vlon= function (){audio.volume=1};
+        const vloff=function (){audio.volume=0};
+    </script>
+</body>
+
+</html>

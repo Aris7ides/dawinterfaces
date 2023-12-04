@@ -1,0 +1,336 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/* *****HEADER***** */
+.logo1{
+    color: #F4EEA9;
+    font-weight: bolder;
+}
+
+.logo2{
+    color: #f0bb62;
+    font-weight: lighter;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    background-color: #a7906f;
+    display: grid;
+    grid-template-columns: 18vw auto;
+    position: relative;
+    top: 0px;
+    height: 12vh;
+    position: sticky;
+}
+
+header h1{
+    grid-column: 2;
+    text-shadow: 1px 2px  black;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    height: fit-content;
+}
+
+.bars{
+    grid-column: 1;
+    width: 60%;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.bars:hover{
+    cursor: pointer;
+}
+
+/*Navigation*/
+nav{
+    display: none;
+    width: 50%;
+}
+
+nav a{
+    text-decoration: none;
+    color: #F4EEA9;
+}
+
+nav a:hover{
+    color: #f0bb62;
+}
+
+/* ***** FOOTER ***** */
+footer *{
+    padding: 7px;
+}
+
+footer{
+    background-color: #064635;
+    color: #cca669;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-footer{
+    display: block;
+    width: 100%;
+}
+
+.icon-footer img{
+    width: 9vw;
+    height: 9vh;
+}
+
+footer a{
+    color: #cca669;
+}
+
+footer a:hover{
+    font-size: 125%;
+}
+
+.icon-footer > a:hover img{
+    width: 12vw;
+}
+
+/* *****MAIN***** */
+main{
+    background-image: url(img/background-index.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    color: #F4EEA9;
+}
+
+main div{
+    background-color: rgba(0, 0, 0, 0.696);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* *****SECTION*****  */
+
+/* about us*/
+
+#about-us{
+    background-color: #F4EEA9;
+    color: #a7906f;
+    font-weight: bold;
+}
+
+#about-us h2{
+    font-weight: bolder;
+}
+
+#about-us p{
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+}
+
+#about-us div{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+}
+
+#about-us img{
+    width: 90vw;
+}
+
+/* background gradual*/
+.gradient{
+    background: rgb(244,238,169);
+    background: linear-gradient(180deg, rgba(244,238,169,1) 0%, rgba(163,192,129,1) 35%, rgba(81,146,89,1) 100%);
+}
+
+/* reviews */
+#reviews{
+    display: none;
+}
+
+/* another */
+.others{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.other-options{
+    border-radius: 25px;
+    margin: 5%;
+}
+
+.other-options h3{
+    background-color: #a7906f;
+    width: fit-content;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: #F4EEA9;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#shop{
+    background-image: url(img/shop-mobile2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#work{
+    background-image: url(img/work-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#blog{
+    background-image: url(img/blog-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.back{
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* BUTTONS */
+button{
+    background-color: #a7906f;
+    color: #F4EEA9;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 0px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+button:hover{
+    padding: 30px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+/********WEB MEDIA QUERY*********/
+@media only screen and (min-width: 666px){
+    /****HEADER****/
+    .bars{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1{
+        margin-top: 15px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: last baseline;
+        height: 100%;
+        width: 100%;
+    }
+
+    nav ul li{
+        display: inline;
+    }
+
+    nav a{
+        margin: 15px;
+    }
+
+    /***SECTION***/
+    #about-us div{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #about-us img{
+        width: 50%;
+    }
+
+    #about-us p{
+        padding-right: 120px;
+    }
+
+ /***Reviews***/
+    #reviews{
+        display: block;
+    }
+
+    
+    /***Other optiobns***/
+    .others{
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+        grid-template-rows: 300px;
+        padding: 0px;
+    }
+    
+    .back h3{
+        background-color: transparent;
+    }
+    
+    /***FOOTER***/
+    footer{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+    
+    .footer-section{
+        text-align: center;
+    }
+}
+
+#reviews h2{
+    color: #a7906f;
+    margin-bottom: 30px;
+}
+
+.container-reviews{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: 200px;
+}
+
+/***Imagenes de reviews***/
+.review img{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+
+/***Estrellas de reviews***/
+.checked{
+    color: orange;
+}

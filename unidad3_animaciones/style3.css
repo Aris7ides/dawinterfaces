@@ -1,0 +1,17 @@
+#c1{
+    animation: shrink 2s linear infinite normal;
+    transform-origin: 50% 50%;
+}
+
+#c2{
+    animation: grow 2s linear infinite normal;
+    transform-origin: 50% 50%;
+}
+
+@keyframes grow{
+    50%{transform: scale(2,2);}
+}
+
+@keyframes shrink{
+    50%{transform: scale(0.5,0.5);}
+}

@@ -1,0 +1,5 @@
+@mixin algodon($a, $b){
+    -webkit-transition: color 0.2s ease-in, background 0.5s ease-out;
+    -moz-transition: color 0.2s ease-in, background 0.5s ease-out;
+    transition: color 0.2s ease-in, background 0.5s ease-out;
+    }

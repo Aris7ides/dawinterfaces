@@ -1,0 +1,13 @@
+@mixin anArg($size){
+    border-radius: $size;
+    -moz-border-radius: $size;
+    -webkit-border-radius: $size;    
+}
+
+#footer{
+    @include anArg(5px);
+}
+
+#sidebar{
+    @include anArg(8px);
+}

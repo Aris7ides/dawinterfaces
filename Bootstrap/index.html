@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fine Arts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark mb-5">
+        <a class="navbar-brand" href="#">Fine Arts</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Logos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="row pt-5 mt-3">
+        <h2 class="featurette-heading">WE'RE A SAN FRANCISCO DESIGN STUDIO</h2>
+        <p class="lead">We create logos, brand identities, packaging, websites, signage, apps, books, posters, illustrations,
+          strategy, icons, stationery, menus, uniforms, collateral, patterns...
+          and all of the other things that you haven’t yet considered.</p>
+      </div>
+
+      <div class="row">
+        <h2 class="featurette-heading">Projects</h2>
+        
+        <!--
+          aplicar slider!!!!!!!
+
+        <img src="img/image1.JPG" alt="prj-1">
+        <img src="img/image2.JPG" alt="prj-2">
+        <img src="img/image5.JPG" alt="prj-3">
+        <img src="img/image6.JPG" alt="prj-4">
+        <img src="img/image7.JPG" alt="prj-5">
+        -->
+      </div>
+
+      <div class="row">
+        <h2 class="featurette-heading">Logos</h2>
+        <div class="col">
+          <img class="rounded-circle" src="img/image3.JPG" alt="logo-1" width="150" height="150">
+        </div>
+        <div class="col">
+          <img class="rounded-circle" src="img/image4.JPG" alt="logo-2" width="150" height="150">
+        </div>
+        <div class="col">
+          <img class="rounded-circle" src="img/image8.JPG" alt="logo-3" width="150" height="150">
+        </div>
+        <div class="col">
+          <img class="rounded-circle" src="img/image9.JPG" alt="logo-4" width="150" height="150">
+        </div>
+      </div>
+
+      <div class="row">
+        <h2 class="featurette-heading">Contact with us</h2>
+        <!--contact data: address, email, telephone number, social networks-->
+
+      </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <!--Script BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+      let menu=document.getElementById("navbarCollapse");
+      document.getElementsByClassName("navbar-toggler")[0].addEventListener("click",function (){
+        if(menu.style.display==="none"){
+          menu.style.display="block";
+        }else{
+          menu.style.display="none";
+        }
+      });
+
+    </script>
+  </body>
+</html>

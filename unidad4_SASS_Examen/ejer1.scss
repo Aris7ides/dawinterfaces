@@ -1,0 +1,22 @@
+.message{
+    border: 1px solid #cccccc;
+    padding: 10px;
+    color: #333;
+}
+
+@mixin extendiendo($color){
+    @extend .message;
+    border-color: $color;
+}
+
+.success{
+    @include extendiendo((green));
+}
+
+.error{
+    @include extendiendo((red));
+}
+
+.warning{
+    @include extendiendo((yellow));
+}

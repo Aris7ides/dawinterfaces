@@ -1,0 +1,12 @@
+$theme:dark;
+@function theme(){
+    @if $theme == dark{
+        @return black;
+    } @else {
+        @return pink;
+    }
+}
+
+h1{
+    color: theme();
+}

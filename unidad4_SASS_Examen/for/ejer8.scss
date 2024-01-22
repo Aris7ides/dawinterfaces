@@ -1,0 +1,8 @@
+$value:0;
+
+@for $i from 1 to 4{
+    $value:$value+2;
+    .item-#{$i}{
+        width: #{$value}em;
+    }
+}

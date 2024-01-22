@@ -1,0 +1,9 @@
+// Regla base para el media query
+@media (max-width: 320px) {
+    .caja {
+      padding: 15px;
+    }
+    .noticias {
+      @extend .caja;
+    }
+  }

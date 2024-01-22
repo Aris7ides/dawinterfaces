@@ -1,0 +1,11 @@
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+#eje1 {
+    font-size: strip-unit(42em)px;
+}
+
+#eje2 {
+    padding: strip-unit(75px)em;
+}

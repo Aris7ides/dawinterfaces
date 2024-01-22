@@ -1,0 +1,12 @@
+.item {
+    position: absolute;
+    margin-right: 10px;
+
+    $contador:1;
+    @while $contador < 4 {
+        &.item-#{$contador} {
+            top: $contador * 30px;
+        }
+        $contador : $contador +1;
+    }
+}

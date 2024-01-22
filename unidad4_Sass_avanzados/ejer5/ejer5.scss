@@ -1,0 +1,12 @@
+
+@mixin para($color, $bool){
+    @if $bool {
+        border-radius: 4px;
+    }@else{
+        color: $color;;
+    }
+}
+
+div{
+    @include para(green, true);
+}

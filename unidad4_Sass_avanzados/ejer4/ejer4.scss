@@ -1,0 +1,13 @@
+@function add($numbers...) {
+    $add: 0;
+  
+    @each $number in $numbers {
+      $add: $add +$number;
+    }
+  
+    @return $add;
+  }
+  
+  .gfg {
+    width: add(50, 30, 100);
+  }

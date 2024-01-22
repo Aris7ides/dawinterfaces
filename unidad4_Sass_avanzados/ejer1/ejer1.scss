@@ -1,0 +1,12 @@
+@function potencia($base, $exponente){
+    $resultado:1;
+    @for $i from 1 through $exponente{
+        $resultado : $resultado * $base;
+    }
+    @return $resultado;
+}
+
+.sidebar{
+    float: right;
+    margin-left: potencia(2,6)+8px;
+}

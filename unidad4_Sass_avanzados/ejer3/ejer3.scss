@@ -1,0 +1,6 @@
+$color : green;
+
+.banner{
+    background-color: green;
+    color: scale-color($color,$saturation: 10%, $lightness: 40%);
+}

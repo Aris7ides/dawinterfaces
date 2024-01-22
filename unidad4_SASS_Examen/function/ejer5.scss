@@ -1,0 +1,7 @@
+@function multiplicar($x,$y){
+    @return $x*$y;
+}
+
+p{
+    margin-top: multiplicar(10px,2);
+}

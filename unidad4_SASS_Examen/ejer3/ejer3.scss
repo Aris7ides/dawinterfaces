@@ -1,0 +1,14 @@
+// Regla base para .contenido y .lateral
+.contenido {
+    background: #eaeaea;
+    padding: 10px;
+    p {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+  }
+  
+  .lateral {
+    @extend .contenido;
+    background: #ddd;
+  }

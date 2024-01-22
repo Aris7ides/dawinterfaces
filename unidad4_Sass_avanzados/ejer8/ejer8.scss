@@ -1,0 +1,25 @@
+@mixin incc(){
+    padding: 10px;
+    border-radius: 5px;
+}
+
+$family: sans-serif;
+$color: #911111;
+
+.message{
+    color: $color;
+    font-family: "Roboto", #{$family};
+    @include incc();
+    :hover{
+        background: compliment($color);
+    }
+    .message-item{
+        @include incc();
+        margin: 2px;
+        font: {
+            size: $font-size__small; 
+            weigth: bold;
+            family: $family;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+//6. Using interpolation #{$variable} create a mixin that generatesc
+
+@mixin prueba($variable){
+    border-top-left-radius: #{$variable};
+    -moz-border-radius-topleft: #{$variable};
+    -webkit-border-top-left-radius: #{$variable}; 
+}
+
+#navbar li{
+    @include prueba(10px);
+}
+
+#footer{
+    @include prueba(5px);
+}
+
+#sidebar{
+    @include prueba(8px);
+}

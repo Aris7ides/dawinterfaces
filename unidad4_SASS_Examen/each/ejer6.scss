@@ -1,0 +1,8 @@
+$url: "/images/";
+$imagenes: "puma", "sea-slug", "egret", "salamander.";
+
+@each $imagen in $imagenes{
+    .#{$imagen}-icon{
+        background-image: url('#{$url}#{$imagen}.png');
+    }
+}

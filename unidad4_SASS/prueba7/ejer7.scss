@@ -1,0 +1,13 @@
+@mixin prueba($value){
+    -webkit-transform: $value;
+    -ms-transform: $value;
+    transform: $value;
+}
+
+.escalada{
+    @include prueba(scale(2,3));
+}
+
+h1{
+    @include prueba(rotate(22deg));
+}
